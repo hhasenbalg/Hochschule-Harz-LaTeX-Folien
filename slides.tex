@@ -1,0 +1,98 @@
+\documentclass{hsharz-slides}
+
+%set size of din a 4
+
+\setlength{\paperwidth}{29.7cm}
+\setlength{\paperheight}{21.0cm}
+\setlength{\textwidth}{27cm}
+\setlength{\textheight}{20.0cm} 
+
+\title       {Titel der Präsentation
+            \\in 38 Pt Bold }
+\subtitle    {Der Subtitel}
+\author      {Vorname Nachname}
+\newcommand{\function}{Funktion des Vortragenen}
+%Akutelles Datum oder Datum selbst setzen, dann auskommentieren 
+%\date     {17.07.2012}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Die logos können hier festgelegt werden
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\hslogo}{images/logo/HSH-Logo-RGB-dt.png}
+\newcommand{\hslogoblack}{images/logo/HSH-Logo-RGB-dt-black.pdf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% colorAI für den Fachbereich AI
+% colorVW für den Fachbereich VW
+% colorWW für den Fachbereich WW
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ColorTheme}{colorAI}
+
+\begin{document}
+    \setbeamercolor{background canvas}{bg=\ColorTheme}
+    
+    \begin{frame}
+        \titlepage  
+    \end{frame}
+    
+    \setbeamercolor{background canvas}{bg=}
+
+    	
+	\begin{frame}
+		\frametitle{Aufzählung}
+		\framesubtitle{Optionale Unterüberschrift}		
+		Beispieltext in 20 Pt
+		\begin{itemize}
+			\item Consectetur adipisicing elit.
+			\item Sed do eiusmod tempor incididunt.
+			\item Sed do eiusmod tempor incididunt.
+			\item Sed do eiusmod tempor incididunt.
+			\item Sed do eiusmod tempor incididunt.
+			\item Sed do eiusmod tempor incididunt.
+			\item Sed do eiusmod tempor incididunt.
+			\item Sed do eiusmod tempor incididunt.
+			\item q do eiusmod tempor incididunt.
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+	    \begin{block}{Block title} 
+	        This is a block in blue
+        \end{block}
+        \begin{alertblock}{Alert-block title}
+	        This is a block in red
+        \end{alertblock}
+	\end{frame}
+    \begin{frame}
+        \frametitle{Spalten}
+		\framesubtitle{eine Folie mit 2 Spalten}	
+        \begin{columns}
+            \column{.55\textwidth}
+                \pgfimage[width=\textwidth]{images/tasse}
+            \column{.45\textwidth}
+                \begin{itemize}
+			        \item Lorem ipsum dolor sit amet.
+			        \item Consectetur adipisicing elit.
+	            \item Sed do eiusmod tempor incididunt.
+		\end{itemize}
+
+        \end{columns}
+    \end{frame}
+	
+	\begin{frame}
+		\frametitle{boxes}
+		
+        \begin{beamerboxesrounded}[upper= uppercol ,shadow=false]
+            {Definition - What is A:} 
+            $A:= 2 + 5$.
+        \end{beamerboxesrounded}
+	\end{frame}
+	
+	    
+    \begin{frame}{Quellen}
+        
+        
+    \end{frame}
+
+\end{document}
